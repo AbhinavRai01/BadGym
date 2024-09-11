@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    #main-container {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 50px 94vh 70vh 95vh 65vh 100vh;
+    }
+
+    #nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        align-items: center;
+    }
+
+    #first-container {
+        background-image: url("Images/young-fitness-man-studio.jpg");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    #left-nav {
+        font-size: 1.7rem;
+        color: rgb(248, 198, 34);
+    }
+
+    #middle-nav {
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        width: 50%;
+    }
+
+    #right-nav {
+        font-size: 1.7rem;
+        color: rgb(248, 198, 34);
+    }
+
+    #first-container-content {
+        margin-left: 5%;
+        width: 60%;
+        font-size: 10rem;
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        line-height: 0px;
+
+    }
+
+    .main-button{
+        height: 50px;
+        width: 200px;
+        background-color: rgb(255, 166, 0);
+        font-family: 'Staatliches', cursive;
+        margin-top: 30px;
+        margin-left: 280px;
+        font-size: 1.7rem;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .second-container{
+        background-color: black;
+        align-items: center;
+    }
+
+    #services{
+        margin: auto;
+        display: grid;
+        width: 80%;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 200px;
+        grid-gap: 60px;
+        /* grid-template-columns: 50px; */
+    }
+
+    #services div{
+        background-size: cover;
+    }
+    #services div div{
+        background-color: rgb(0, 0, 0, 0.7);
+        margin-top: 8rem;
+        width: 100%;
+        font-family: 'Staatliches', cursive;
+        color: orange;
+        font-size: 2rem;
+        /* text-shadow: -1px -1px 0 orange, 1px -1px 0 orange, -1px 1px 0 orange, 1px 1px 0 orange; */
+        
+    }
+
+    #services div div h2{
+        font-family: 'Staatliches', cursive;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+    }
+
+    #services-1{
+        background-image: url("Images/fitness-1877210_1920.jpg");
+    }
+
+    #services-2{
+        background-image: url("Images/vegetables-1238252_1920.jpg");
+    }
+
+    #services-3{
+        background-image: url("Images/in-the-gym-1170496_1920.jpg");
+    }
+
+    #services-4{
+        background-image: url("Images/ring-365403_1920.jpg");
+    }
+
+    #third-container{
+        display: flex;
+    }
+
+    #third-container-image{
+        width: 50%;
+        height: 100%;
+        
+    }
+
+    #third-container-content{
+        float: left;
+        background-color: rgb(41, 41, 41);
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        
+    }
+
+    #yoga-image{
+        object-fit: cover;
+        object-position: 80% 10%;
+    }
+
+    #third-container-content h1{
+        color: orange;
+        margin-left: 25px;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        font-family: 'Staatliches', cursive;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+
+    #third-container-content p{
+        margin-left: 25px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.05rem;
+        line-height: 28px;
+        color: white;
+    }
+
+    #fourth-container{
+        background-image: url("Images/weight-lifting-1284616_1920.jpg");
+        background-size: cover;
+    }
+
+    #fourth-container-content{
+        background-color: rgb(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #fifth-container{
+        background-color: black;  
+
+    }
+
+    #fifth-container-content{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        height: 80%;
+
+    }
+
+    #fifth-container-content > div{
+        width: 25%;
+        height: 100%;
+        border: 2px solid white;
+    }
+
+    #plan-1{
+        border-radius: 50px 0px 0px 50px;
+    }
+
+    #plan-3{
+        border-radius: 0px 50px 50px 0px;
+    }
+
+    #fifth-container-content > div > h1{
+        font-size: 3rem;
+        font-family: 'Staatliches', cursive;
+        color: orange;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+</style>
+
+<body>
+    <div id="main-container">
+        <div class="box" id="nav">
+            <div id="left-nav">Bad gym</div>
+            <div id="middle-nav">
+                <div class="nav-items">HOME</div>
+                <div class="nav-items">PRICING</div>
+                <div class="nav-items">TEAM</div>
+                <div class="nav-items">SERVICES</div>
+                <div class="nav-items">CONTACT US</div>
+            </div>
+            <div id="right-nav">enroll now</div>
+        </div>
+        <div class="box" id="first-container">
+            <div id="first-container-content">
+                <P
+                    style="letter-spacing: 4px; font-size: 1.7rem; color: khaki; margin-bottom: 100px;">
+                    WHEN &nbsp;  LIFE&nbsp; GIVES &nbsp;YOU &nbsp;PAIN,</P>
+                GO TO THE<p style="color: orange; font-size: 1.15em; margin-top: 8rem; margin-bottom: 50px;">BAD GYM</p>
+            <button class="main-button">ENROLL NOW</button>
+            </div>
+        </div>
+        <div class="second-container">
+            <p align="center" style="color: orange; font-family: 'Bebas Neue', cursive; letter-spacing: 4px;">WE PROVIDE YOU</p>
+            <p align="center" style="font-size:5rem; color: rgb(255, 255, 255); font-family: 'Staatliches', cursive; letter-spacing: 4px; margin-top:0px; line-height: 20px;"  id="anim1">THE BEST SERVICES</p>
+            <div id="services" align="center">
+                <div id="services-1">
+                    <div>PERSONALISED TRAINING</div>
+                </div>
+                <div id="services-2"><div>DIET <br> PLANNING</div></div>
+                <div id="services-3"><div>MODERN EQUIPMENTS</div></div>
+                <div id="services-4"><div>FAVORITE <br> GAMES</div></div>
+            </div>
+        </div>
+        <div id="third-container">
+            <div id="third-container-image"> <img id="yoga-image" src="Images/yoga-3053487_1920.jpg" alt="" height="100%" width="100%"></div>
+            <div id="third-container-content">
+                <h1>WEIGHT&nbsp; TRAINING:</h1>
+                <p>From bodybuilding to powerlifting and everything in between, the Fitness Factory has the equipment to help you reach your goals. With dumbells up to 150lbs, 7 squat racks, 5 deadlift platforms, 2 competition benches, and a variety of plate loaded and pin loaded machines, we have everything you need.</p>
+                <h1>yoga:</h1>
+                <p>A set of specific exercises, called poses, combined with specific breathing techniques and meditation principles are the building blocks of a yoga class. A set of specific exercises, called poses, combined with specific breathing techniques.</p>
+                <h1>Functional&nbsp; Training:</h1>
+                <p>With 60 feet of turf with a sled, stackable plyometric boxes, weighted medicine balls, battle ropes, squat racks, and deadlift platforms our functional training room has all the equipment you need to take your training to the next level.</p>
+            </div>
+        </div>
+        <div id="fourth-container">
+            <div id="fourth-container-content">
+                <p style="color: orange; font-family: 'Bebas Neue', cursive; font-size: 5rem; margin-top: 0%; text-align: center; margin-bottom: 0.1rem; line-height: 80px; margin-top: 10%;">REGISTRATION NOW TO GET MORE DEALS</p>
+                <p style="color: rgb(255, 255, 255); font-family: 'Bebas Neue', cursive; font-size: 2rem; margin-top: 0%; text-align: center; line-height: 13px;">WHERE HEALTH, BEAUTY AND FITNESS MEET.</p>
+                <button class="main-button" style="margin: auto; margin-top: 1rem;">REGISTer now</button>
+            </div>
+        </div>
+        <div id="fifth-container"><p style="color: rgb(255, 255, 255); font-family: 'Bebas Neue', cursive; font-size: 4rem; margin-top: 0%; text-align: center; margin-bottom: 0.1rem; line-height: 80px; margin-top: 1%;">MEMBERSHIP PRICES</p>
+        <div id="fifth-container-content">
+            <div id="plan-1">
+                <h1>BASIC</h1>
+            </div>
+            <div id="plan-2">
+                <h1>STANDARD</h1>
+            </div>
+            <div id="plan-3">
+                <h1>ADVANCED</h1>
+            </div>
+        </div></div>
+    </div>
+    <script>
+        let text = document.getElementById("anim1");
+        let content1 = text.textContent;
+        text.textContent = "";
+        
+        let letters = content1.split("");
+
+        function addtext(letter){
+            text.textContent += letter;
+        }
+
+        for (i = 0;i < letters.length; i++){
+            setTimeout(addtext, i*100, letters[i]);
+            
+        }
+    </script>
+</body>
+
+</html>
